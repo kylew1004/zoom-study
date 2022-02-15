@@ -1,3 +1,11 @@
+const socket = new WebSocket(`ws://${window.location.host}`);
+
+function handleOpen() {
+  console.log("Connected to Server ✅");
+}
+
+socket.addEventListener("open", handleOpen);
+
 socket.addEventListener("open", () => {
   console.log("Connected to Server ✅");
 });
