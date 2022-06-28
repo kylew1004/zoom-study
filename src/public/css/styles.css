@@ -1,0 +1,170 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 38px;
+  color: #2d8cff;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+video {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#nickName,
+#welcome,
+#chat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#nickName h3 {
+  margin-bottom: 10px;
+}
+
+#nickName form,
+#welcome form,
+#chat form {
+  position: relative;
+  background-color: #2d8cff;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+#nickName input,
+#welcome input,
+#chat input {
+  width: 400px;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#nickName button,
+#welcome button,
+#chat button {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+#welcome span {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#welcome li {
+  margin-top: 5px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#call {
+  position: relative;
+}
+
+#call h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+#video {
+  display: flex;
+}
+
+.video__wrap {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+#chatList {
+  width: 400px;
+  height: 710px;
+  border-radius: 20px;
+  border: 5px solid #2d8cff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#chatList li {
+  margin-top: 5px;
+}
+
+.video__controller {
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.video__controller button {
+  padding: 5px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.video__controller select {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px 20px;
+  color: white;
+}
+
+#leave {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 16px;
+}
